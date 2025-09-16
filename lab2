@@ -1,0 +1,459 @@
+// //1
+// #include <iostream> 
+// using namespace std; 
+// int main() 
+// { 
+//     //setlocale(0, ""); 
+//     double a1, b1, a2, b2,a3,b3; 
+//     cout << "Введите стороны 1-го прямоугольника \n"; 
+//     cout << "a1= "; cin >> a1; 
+//     cout << "b1= "; cin >> b1;
+
+//     cout << "Введите стороны 2-го прямоугольника \n"; 
+//     cout << "a2= "; cin >> a2; 
+//     cout << "b2= "; cin >> b2;
+
+//     cout << "Введите стороны 2-го прямоугольника \n"; 
+//     cout << "a3= "; cin >> a3; 
+//     cout << "b3= "; cin >> b3;  
+
+//     double s1, s2,s3; 
+//     s1 = a1 * b1; 
+//     s2 = a2 * b2;
+//     s3 = a3*b3;
+//     //int otvet = max(s1,max(s2,s3));
+
+//     if (s1 > max(s2,s3)) 
+//         cout << "max площадь у первого, S= " << s1; 
+//     else if(s2>max(s1,s3)) 
+//         cout << "max площадь у второго, S= " << s2;
+//     else if(s3>max(s1,s2)){
+//         cout << s3;
+//     }
+//     return 0; 
+// }
+// #include <iostream> 
+// using namespace std; 
+// int main() 
+// { 
+//     //setlocale(0, ""); 
+//     double a1, b1, a2, b2; 
+//     cout << "Введите стороны 1-го прямоугольника \n"; 
+//     cout << "a1= "; cin >> a1; 
+//     cout << "b1= "; cin >> b1; 
+//     cout << "Введите стороны 2-го прямоугольника \n"; 
+//     cout << "a2= "; cin >> a2; 
+//     cout << "b2= "; cin >> b2; 
+
+//     double s1, s2; 
+//     s1 = a1 * b1; 
+//     s2 = a2 * b2; 
+//     if (s1 > s2) 
+//         cout << "max площадь у первого, S= " << s1; 
+//     else if(s2>s1) 
+//         cout << "max площадь у второго, S= " << s2;
+//     else{
+//         cout << "Площади равны";
+//     }
+//     return 0; 
+// }
+// //2
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int a;
+//     cin >> a;
+//     if(a==0){
+//         cout << "Это число ноль";
+//     }
+//     else if(a<0){
+//         cout << "Это число меньше нуля";
+//     }
+//     else{
+//         cout << "Это число больше нуля";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+
+//     int a;
+
+//     cin >> a;
+
+//     if(a%2==0){
+//         cout << "Число четное";
+//     }
+//     else{
+//         cout << "Число нечетное";
+//     }
+
+//     return 0;
+// }
+
+// //3
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// int F(int); 
+
+// int main(){
+//     int x;
+//     cin >> x;
+//     cout << F(x);
+//     return 0;
+// }
+
+// int F(int x)
+// {
+//     if(x<=-2){
+//         int a = 0;
+//         return a;
+//     }
+//     else if(x<=10){
+//         if(x>-2){
+//             int a = pow(x,2)+4*x+5;
+//             return a;
+//         }
+//     }
+//     else
+//     {
+//         int a = 1/(pow(x,2)+4*x+5);
+//         return a;
+//     }
+//     return 0;
+// }
+// #include <iostream>
+// #include <locale>
+// using namespace std;
+
+// void F(int);
+
+// int main(){
+//     setlocale(LC_ALL, "ru_RU.UTF-8");
+//     int x;
+//     cin>>x;
+//     try
+//     {
+//         F(x);
+//     }
+//     catch(runtime_error e)
+//     {
+//         cout << e.what();
+//     }
+    
+// }
+
+// void F(int x){
+//     if(x<=-2){
+//         cout<<0;
+//     }
+//     else if(x>-2 && x<=0){
+//         int b = x*x+4*x+5;
+//         cout << b;
+//     }
+//     else{
+//         int c = x*x+4*x-5;
+//         if(c==0){
+//             throw runtime_error("Деление на ноль!");
+//         }
+//         int b = 1/c;
+//         cout<<b;
+
+//     }
+// }
+// //4
+// #include <iostream> 
+// using namespace std; 
+// int main() 
+// { 
+//     setlocale(0, ""); 
+//     int  dM, dW; 
+//     cout << "Введите дату: "; 
+//     cout << "День месяца: ";   
+//     cin >> dM; 
+//     cout << "Номер дня в неделе: ";   
+//     cin >> dW; 
+
+//     if (13 == dM) 
+//         if (5 == dW) 
+//             cout << "неудачный день "; 
+//         else 
+//             if (2 == dW) 
+//                 cout << "неудачный день "; 
+//     else if(17 == dM){
+//         if (5==dW)
+//         {
+//             cout << "неудачный день";
+//         }
+//     }
+// }
+// //5
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int a,b,r,z,c;
+//     cin>>a;
+//     cin>>b;
+//     cin>>r;
+//     cin>>z;
+//     cin>>c;
+
+//     if(2*r>>a||2*r>>b||z>c){
+//         cout << "Торт не поместится";
+//     }
+//     else{
+//         cout << "Торт поместится";
+//     }
+
+//     return 0;
+// }
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+//     int x,y,z,a,b;
+//     cin>>x;
+//     cin>>z;
+//     cin>>a;
+//     cin>>b;
+//     if(x>a||z>b){
+//         cout << "Кирпич не влезет";
+//     }
+//     else{
+//         cout << "Кирпич влезет";
+//     }
+
+//     return 0;
+// }
+// //6
+// #include <iostream> 
+// using namespace std; 
+// int main() 
+// { 
+//  setlocale(LC_ALL, "ru_RU.UTF-8"); 
+//       int x;  //переменная для хранения оценки 
+//  cout << "введите свою оценку: ";  
+//  cin >> x; 
+//  //оператор множественного выбора 
+//  switch (x) { 
+//      case 5: cout << "отлично"; break; 
+//      case 4: cout << "хорошо"; break; 
+//      case 3: cout << "удовлетворительно"; break; 
+ 
+//      case 2: 
+//      case 1: cout << "плохо ";  break; 
+//      default: cout << "неверныe данные"; 
+//  } 
+ 
+//  return 0; 
+// }
+// //7
+//  #include <iostream>
+
+// using namespace std;
+
+// int main(){
+//     double a;
+//     double b;
+//     char c;
+//     cin>>a;
+//     cin>>b;
+//     cin>>c;
+//     return 0;
+//     switch (c)
+//     {
+//         case '+':
+//             cout<<a+b;
+//             break;
+        
+//         case '-':
+//             cout<<a-b;
+//             break;
+//         case '*':
+//             cout<<a*b;
+//             break;
+//     }
+// }
+
+// //8
+// #include <iostream>
+// #include <cmath> // для sqrt
+
+// using namespace std;
+
+// int main() {
+//     double x, y;
+//     cin >> x >> y;
+
+//     double r = sqrt(x * x + y * y); // расстояние от центра (0,0) до точки
+
+//     int score = 0;
+//     if (r <= 2) {
+//         score = 10;
+//     } else if (r <= 4&&r>2) {
+//         score = 5;
+//     }
+
+//     cout << score << endl;
+
+//     return 0;
+// }
+// //9
+// #include <iostream>
+
+// using namespace std;
+
+// int main(){
+//     int x,y;
+//     cin>>x;
+//     cin>>y;
+
+//     //a
+//     // if(x<=0&&x>=-2&&y>=0 && y<=1){
+//     //     cout << "Он входит";
+//     // }
+//     //b
+//     // else if(part == 'b') {
+//     //     // Полукруг с центром в 0,0 и радиусом 5, верхняя половина
+//     //     if(y >= 0 && (x*x + y*y <= 25))
+//     //         inside = true;
+//     // }
+//     //c 
+//     // else if(part == 'c') {
+//     //     // Полукольцо: внешнее y^2+x^2 <= 9, внутреннее y^2+x^2 >= 4, верхняя половина
+//     //     double r2 = x*x + y*y;
+//     //     if(y >= 0 && r2 <= 9 && r2 >= 4)
+//     //         inside = true;
+//     // } 
+//     //d
+//     // else if(part == 'd') {
+//     //     // Треугольник: y >= 0, x >= 0, y <= -2x + 2
+//     //     if(x >= 0 && y >= 0 && y <= -2*x + 2)
+//     //         inside = true;
+//     // }
+//     return 0;
+// }
+// //10
+// #include <iostream>
+
+// using namespace std;
+
+
+// int main(){
+//     bool isT;
+//     int a,b,c;
+//     cin>>a;
+//     cin>>b;
+//     cin>>c;
+//     if(a<=b+c||b<=a+c||c<=a+b){
+//         isT = true;
+//     }
+//     if(isT){
+//         if(a==b && a==c){
+//             cout<<"Равносторонний";
+//         }
+//         if(c*c==a*a+b*b||b*b==a*a+c*c||a*a==c*c+b*b){
+//             cout<<"Прямоугольный";
+//         }
+//         if((a==b&&a!=c)||(a==c&&a!=b)||(c==b&&c!=a)){
+//             cout<<"Равнобедренный";
+//         }
+//     }
+//     return 0;
+// }
+// //11
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int day_birth, month_birth, year_birth;
+//     int day_now, month_now, year_now;
+
+//     // Ввод даты рождения
+//     cout << "Введите день рождения: ";
+//     cin >> day_birth;
+//     cout << "Введите месяц рождения: ";
+//     cin >> month_birth;
+//     cout << "Введите год рождения: ";
+//     cin >> year_birth;
+
+//     // Ввод текущей даты
+//     cout << "Введите текущий день: ";
+//     cin >> day_now;
+//     cout << "Введите текущий месяц: ";
+//     cin >> month_now;
+//     cout << "Введите текущий год: ";
+//     cin >> year_now;
+
+//     // Вычисление возраста
+//     int age = year_now - year_birth;
+//     if (month_now < month_birth || (month_now == month_birth && day_now < day_birth)) {
+//         age--; // Если день рождения еще не наступил в этом году
+//     }
+
+//     // Определение правильной формы слова "год"
+//     string suffix;
+//     if (age % 10 == 1 && age % 100 != 11) {
+//         suffix = "год";
+//     } else if ((age % 10 >= 2 && age % 10 <= 4) && !(age % 100 >= 12 && age % 100 <= 14)) {
+//         suffix = "года";
+//     } else {
+//         suffix = "лет";
+//     }
+
+//     // Вывод результата
+//     cout << "Вам " << age << " " << suffix << endl;
+
+//     return 0;
+// }
+// //12
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int a, b, c;
+//     cout << "Введите три целых числа: ";
+//     cin >> a >> b >> c;
+
+//     // a) сумма чисел больше 10
+//     int sum = 0;
+//     if (a > 10) sum += a;
+//     if (b > 10) sum += b;
+//     if (c > 10) sum += c;
+//     cout << "Сумма чисел больше 10: " << sum << endl;
+
+//     // b) количество четных чисел
+//     int evenCount = 0;
+//     if (a % 2 == 0) evenCount++;
+//     if (b % 2 == 0) evenCount++;
+//     if (c % 2 == 0) evenCount++;
+//     cout << "Количество четных чисел: " << evenCount << endl;
+
+//     // c) среднее число (то, которое между наибольшим и наименьшим)
+//     int middle;
+//     if ((a >= b && a <= c) || (a <= b && a >= c)) middle = a;
+//     else if ((b >= a && b <= c) || (b <= a && b >= c)) middle = b;
+//     else middle = c;
+//     cout << "Среднее число: " << middle << endl;
+
+//     // d) номер наименьшего числа
+//     int minNum = a;
+//     int minIndex = 1;
+//     if (b < minNum) { minNum = b; minIndex = 2; }
+//     if (c < minNum) { minNum = c; minIndex = 3; }
+//     cout << "Номер наименьшего числа: " << minIndex << endl;
+
+//     return 0;
+// }
